@@ -1,0 +1,50 @@
+Write an application that finds all phone numbers in a set of text files located in a directory tree starting with <somewhere>. Files should be processed regardless of the nesting level. At the same time, only text files with .txt extension need to be processed, and the others should be ignored. Phone numbers in the source files can be mixed with any text. Invalid phone numbers should be skipped. Below are the allowed formats for phone numbers.
+
+ 
+
+Phone numbers can be given with the country code:
+
+ 
+
++7 812 123-4567
++7 (495) 1237654
+
++78120987654
+
++7812 1230987
+
+7-812-1324759
+
+ 
+
+With a three-digit area code:
+
+(812) 1010023
+
+8121234544
+
+812 1231233
+
+095-1231231
+
+ 
+
+Or none at all. At the same time the number can have different spellings:
+
+123-4567
+
+123-45-67
+
+1234567
+
+ 
+
+If the city code is not specified, it is considered equal to 812, if the country code is not specified, it is considered equal to 7. You need to find all the numbers in all of the files. Change formatting to the unified "full" format
+
++7 (812) 123-4567
+
+remove duplicates and print the list of numbers in ascending order.
+
+ 
+
+Programming language - any. Instruction how to run should be provided along with the solution.
